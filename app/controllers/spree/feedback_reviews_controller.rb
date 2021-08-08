@@ -1,5 +1,5 @@
 module Spree
-  class FeedbackReviewsController < Spree::StoreController
+  class FeedbackReviewsController < Spree::BaseController
     helper Spree::BaseHelper
 
     before_action :sanitize_rating, only: :create
